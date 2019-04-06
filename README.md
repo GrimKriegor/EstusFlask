@@ -2,6 +2,16 @@
 
 Ambient light that resembles a flickering Estus Flask sitting on a stone base, with multiple modes of operation, namely regular Estus Flask and Ashen Estus Flask.
 
+
+## Preview
+
+<p float="left" align=center>
+  <img src="https://github.com/GrimKriegor/EstusFlask/raw/master/pictures/idle.jpg" width="256" />
+  <img src="https://github.com/GrimKriegor/EstusFlask/raw/master/pictures/red.gif" width="256" />
+  <img src="https://github.com/GrimKriegor/EstusFlask/raw/master/pictures/blue.gif" width="256" />
+</p>
+
+
 ## Getting
 
 ```
