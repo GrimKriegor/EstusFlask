@@ -10,7 +10,7 @@ LEDController red(9),
 
 /* Mode specific configuration variables */
 LEDController *main_led,
-              *secondary_led;
+              *secondary_led = NULL;
 
 uint8_t       main_led_intensity_max,
               main_led_intensity_min,
