@@ -6,9 +6,9 @@ Ambient light that resembles a flickering Estus Flask sitting on a stone base, w
 ## Preview
 
 <p float="left" align=center>
-  <img src="https://github.com/GrimKriegor/EstusFlask/raw/master/pictures/idle.jpg" width="256" />
-  <img src="https://github.com/GrimKriegor/EstusFlask/raw/master/pictures/red.gif" width="256" />
-  <img src="https://github.com/GrimKriegor/EstusFlask/raw/master/pictures/blue.gif" width="256" />
+  <img src="https://github.com/GrimKriegor/EstusFlask/raw/main/pictures/idle.jpg" width="256" />
+  <img src="https://github.com/GrimKriegor/EstusFlask/raw/main/pictures/red.gif" width="256" />
+  <img src="https://github.com/GrimKriegor/EstusFlask/raw/main/pictures/blue.gif" width="256" />
 </p>
 
 
