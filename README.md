@@ -51,8 +51,7 @@ Base adhesion  | Skirt
 
 ## Wiring
 
-RGB LED connected to pins 9, 10 and 11 an USB powered AVR ATMega328p board through three 220 ohm resistors.
-
+RGB LED connected to pins 9, 6 and 5 (respectively) on an USB powered AVR ATMega328p board through 220 ohm resistors.
 
 
 ## Building and uploading the code
@@ -60,6 +59,13 @@ RGB LED connected to pins 9, 10 and 11 an USB powered AVR ATMega328p board throu
 ```
 cd src/
 make upload
+```
+
+Or if you are using a programmer
+
+```
+cd src/
+make ispload
 ```
 
 

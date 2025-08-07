@@ -4,8 +4,8 @@
 
 /* LED initialization */
 LEDController red(9),
-              green(10),
-              blue(11);
+              green(6),
+              blue(5);
 
 
 /* Mode specific configuration variables */
@@ -50,7 +50,7 @@ void initMode(uint8_t mode) {
       break;
 
     /* Ashen Estus Flask */
-    case 3:
+    case 0:
       main_led                    = &blue;
       secondary_led               = &green;
       main_led_intensity_min      = 192;
