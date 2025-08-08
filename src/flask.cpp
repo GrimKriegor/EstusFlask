@@ -9,7 +9,7 @@ LEDController red(9),
 
 
 /* Mode specific configuration variables */
-LEDController *main_led,
+LEDController *main_led      = NULL,
               *secondary_led = NULL;
 
 uint8_t       main_led_intensity_max,
@@ -17,7 +17,7 @@ uint8_t       main_led_intensity_max,
               secondary_led_intensity_max,
               secondary_led_intensity_min;
 
-int           main_led_duration_min,
+uint16_t      main_led_duration_min,
               main_led_duration_max,
               secondary_led_duration_min,
               secondary_led_duration_max;
@@ -25,7 +25,7 @@ int           main_led_duration_min,
 
 /* State variables */
 uint8_t       main_led_intensity,
-              secondary_led_intensity = 0;
+              secondary_led_intensity;
 
 
 /*
@@ -89,9 +89,9 @@ void loop() {
 
   /* Generate cycle specific values for intensity and duration */
   uint8_t main_led_intensity_new       = random(main_led_intensity_min, main_led_intensity_max+1);
-  int main_led_duration_new            = random(main_led_duration_min, main_led_duration_max+1);
+  uint16_t main_led_duration_new       = random(main_led_duration_min, main_led_duration_max+1);
   uint8_t secondary_led_intensity_new  = random(secondary_led_intensity_min, secondary_led_intensity_max+1);
-  int secondary_led_duration_new       = random(secondary_led_duration_min, secondary_led_duration_max+1);
+  uint16_t secondary_led_duration_new  = random(secondary_led_duration_min, secondary_led_duration_max+1);
 
   /* Change LED intensity accordingly */
   main_led->stepDim(main_led_duration_new, main_led_intensity, main_led_intensity_new);
