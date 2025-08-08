@@ -44,7 +44,7 @@ void initMode(uint8_t mode) {
       main_led_duration_min       = 2000;
       main_led_duration_max       = 2000;
       secondary_led_intensity_min = 0;
-      secondary_led_intensity_max = 64;
+      secondary_led_intensity_max = 32;
       secondary_led_duration_min  = 100;
       secondary_led_duration_max  = 1000;
       break;
@@ -88,13 +88,13 @@ void setup () {
 void loop() {
 
   /* Generate cycle specific values for intensity and duration */
-  uint8_t main_led_intensity_new       = random(main_led_intensity_min, main_led_intensity_max+1);
-  uint16_t main_led_duration_new       = random(main_led_duration_min, main_led_duration_max+1);
-  uint8_t secondary_led_intensity_new  = random(secondary_led_intensity_min, secondary_led_intensity_max+1);
-  uint16_t secondary_led_duration_new  = random(secondary_led_duration_min, secondary_led_duration_max+1);
+  uint8_t  main_led_intensity_new      = random(main_led_intensity_min,      main_led_intensity_max + 1);
+  uint16_t main_led_duration_new       = random(main_led_duration_min,       main_led_duration_max + 1);
+  uint8_t  secondary_led_intensity_new = random(secondary_led_intensity_min, secondary_led_intensity_max + 1);
+  uint16_t secondary_led_duration_new  = random(secondary_led_duration_min,  secondary_led_duration_max + 1);
 
   /* Change LED intensity accordingly */
-  main_led->stepDim(main_led_duration_new, main_led_intensity, main_led_intensity_new);
+  main_led     ->stepDim(main_led_duration_new,      main_led_intensity,      main_led_intensity_new);
   secondary_led->stepDim(secondary_led_duration_new, secondary_led_intensity, secondary_led_intensity_new);
 
 
