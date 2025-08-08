@@ -1,6 +1,6 @@
 [submodule "Arduino-Makefile"]
 	path = libs/Arduino-Makefile
-	url = https://github.com/sudar/Arduino-Makefile.git
+	url = https://github.com/GrimKriegor/Arduino-Makefile.git
 [submodule "libs/LEDController"]
 	path = libs/LEDController
 	url = https://github.com/GrimKriegor/LEDController.git
