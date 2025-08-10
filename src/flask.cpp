@@ -44,7 +44,7 @@ void initMode(uint8_t mode) {
       main_led_duration_min       = 2000;
       main_led_duration_max       = 2000;
       secondary_led_intensity_min = 0;
-      secondary_led_intensity_max = 32;
+      secondary_led_intensity_max = 24;
       secondary_led_duration_min  = 100;
       secondary_led_duration_max  = 1000;
       break;
